@@ -37,7 +37,7 @@ Columns:
 Credit_Card_Fraud_Detection/
 
 
-    1. data/              
+    1. data/  --------------------------------------------- data            
     2. notebooks/         
     3. sql/               
     4. visualizations/    
