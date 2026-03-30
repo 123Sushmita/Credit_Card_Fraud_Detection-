@@ -34,12 +34,12 @@ Columns:
 
 ## Project Structure
 
-1. Credit_Card_Fraud_Detection/
-    1.1. data/              # Dataset
-    1.2. notebooks/         # Python / Colab notebooks
-    1.3. sql/               # SQL queries
-    1.4. visualizations/    # Tableau screenshots
-    1.5. README.md          # Documentation
+Credit_Card_Fraud_Detection/
+    1. data/              # Dataset
+    2. notebooks/         # Python / Colab notebooks
+    3. sql/               # SQL queries
+    4. visualizations/    # Tableau screenshots
+    5. README.md          # Documentation
 
 ---
 
