@@ -35,6 +35,8 @@ Columns:
 ## Project Structure
 
 Credit_Card_Fraud_Detection/
+
+
     1. data/              
     2. notebooks/         
     3. sql/               
