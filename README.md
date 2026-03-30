@@ -41,8 +41,6 @@ Credit_Card_Fraud_Detection/
 ├─ visualizations/     # Tableau screenshots
 ├─ README.md           # Documentation
 
-
-
 ---
 
 ## Python Analysis
