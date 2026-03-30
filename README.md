@@ -1,72 +1,101 @@
-# Credit_Card_Fraud_Detection-
-Data analysis project: Credit card fraud detection using Python, SQL, and visualizations
+Credit Card Fraud Detection
 
-## Project Overview
-This project analyzes credit card transactions to detect potential fraud using Python, SQL, and data visualization. The goal is to identify high-risk transactions using a combination of transaction features and create a **fraud risk scoring system**.
+Data Analysis Project: Credit Card Fraud Detection using Python, SQL, and Tableau Visualizations
 
+Project Overview
 
+This project analyzes credit card transactions to detect potential fraud. Using Python, SQL, and Tableau, the goal is to identify high-risk transactions and create a fraud scoring system.
 
-## Dataset
-The dataset contains the following columns:
-- `transaction_id` – Unique transaction identifier
-- `amount` – Transaction amount
-- `transaction_hour` – Hour of transaction
-- `merchant_category` – Type of merchant
-- `foreign_transaction` – 1 if foreign, 0 otherwise
-- `location_mismatch` – 1 if location differs from usual
-- `device_trust_score` – Trust score of device used
-- `velocity_last_24h` – Number of transactions in last 24 hours
-- `cardholder_age` – Age of cardholder
-- `is_fraud` – 1 if fraudulent, 0 if not
+Key Objectives:
 
+Explore patterns in fraudulent vs non-fraudulent transactions
+Detect high-risk transactions using multiple risk indicators
+Visualize trends and insights for better decision-making
+Dataset
 
+The dataset contains transaction-level information with the following columns:
 
-## Tools & Skills
-- Python (Pandas, Matplotlib, Seaborn)
-- SQL (CASE statements for fraud scoring)
-- GitHub (portfolio and project sharing)
-- Data Analysis & Visualization
-- Fraud Detection & Risk Scoring
+Column Name	Description
+transaction_id	Unique transaction identifier
+amount	Transaction amount
+transaction_hour	Hour of transaction (0–23)
+merchant_category	Merchant type
+foreign_transaction	1 if foreign transaction, 0 otherwise
+location_mismatch	1 if location differs from usual, 0 otherwise
+device_trust_score	Trust score of the device used
+velocity_last_24h	Number of transactions in last 24 hours
+cardholder_age	Age of cardholder
+is_fraud	1 if fraudulent, 0 if not
 
+Location in repo: data/creditcardFraud.csv
 
-## Workflow
+Project Structure
+Credit_Card_Fraud_Detection/
+├─ data/                  # Dataset
+├─ notebooks/             # Python / Colab analysis
+├─ sql/                   # SQL analysis
+├─ visualizations/        # Tableau screenshots
+├─ README.md              # Project overview
+Python Analysis (notebooks)
+Notebook: notebooks/Credit_Card_Fraud_Analysis.ipynb
+Steps performed:
+Data cleaning and exploration
+Fraud pattern analysis
+Feature-based fraud scoring
+Visualizations using Matplotlib and Seaborn
+SQL Analysis
+SQL file: sql/creditcardanalysis.sql
+Implements fraud scoring using CASE statements and aggregate queries
+Example queries include:
+Total transactions vs fraudulent transactions
+Fraud percentage calculation
+Summarized insights per merchant category, transaction hour, or device score
+Tableau Visualizations
 
-### Step 1: Data Exploration
-- Checked for missing values and distribution of fraud
-- Observed class imbalance: fraud is rare (~1–2%)
+All screenshots of Tableau dashboards are in: visualizations/
 
-### Step 2: Pattern Analysis
-- **Amount:** Fraud transactions tend to be higher
-- **Velocity:** Fraud occurs in multiple transactions quickly
-- **Foreign Transaction:** Foreign transactions have higher fraud rates
-- **Device Trust Score:** Higher risk for some device trust levels
-- **Location Mismatch:** Unusual locations more likely fraud
+Visual Insights
+Fraud vs Non-Fraud Count
 
-### Step 3: Fraud Scoring
-- Created a **fraud_score** by combining risk indicators
-- Each rule assigned points: high amount, high velocity, foreign transaction, device trust score, location mismatch
-- Sorted transactions by fraud_score to identify highest-risk
+![Fraud vs Non-Fraud](visualizations/Fraud Vs Non Fraud Count.png)
 
-### Step 4: SQL Implementation
-- Fraud scoring translated into **SQL CASE statements**
-- Enables **database-level risk scoring**
+Fraud by Transaction Amount
 
-### Step 5: Visualization
-- Countplot: Fraud vs Non-Fraud transactions
-- Histogram: Transaction amounts by fraud
-- Fraud Score distribution
-- Correlation Heatmap for numeric features
-- Scatter plot: Amount vs Fraud Score
-- Fraud by Hour of Day
+![Fraud by Amount](visualizations/Fraud by Amount.png)
 
----
+Fraud by Cardholder Age
 
-## Key Insights
-- Fraud transactions have **higher amounts and velocity**
-- Foreign transactions have a **much higher fraud rate**
-- Combining multiple risk indicators improves **detection accuracy**
-- Visualizations confirm patterns and support the scoring system
+![Fraud by CardHolder Age](visualizations/Fraud by CardHolder Age.png)
 
----
+Fraud by Hour of Day
 
-## Project Structure
+![Fraud by Hour](visualizations/Fraud by Hour.png)
+
+Device Trust Score vs Fraud
+
+![Device Trust vs Fraud](visualizations/Device trust vs Fraud.png)
+
+Fraud by Merchant Category
+
+![Fraud vs Non-Fraud by Merchant Category](visualizations/Fraud vs Non-Fraud by Merchant Category.png)
+
+Heatmap: Fraud by Hour vs Merchant Category
+
+![Heatmap for Fraud by Hour Vs Merchant Category](visualizations/Heatmap for Fraud by Hour Vs Merchant Category.png)
+
+Velocity Last 24 Hours vs Fraud
+
+![Velocity Last 24 hr vs Fraud](visualizations/Velocity last 24 hr vs fraud.png)
+
+Key Insights
+Fraud transactions tend to have higher amounts and higher velocity
+Foreign transactions have a higher probability of fraud
+Low device trust scores and location mismatches increase risk
+Combining multiple features improves fraud detection accuracy
+Visualizations confirm patterns and help identify high-risk transactions
+Tools & Skills
+Python: Pandas, Matplotlib, Seaborn
+SQL: Data aggregation, CASE statements, fraud scoring
+Tableau: Interactive dashboards, binning, visual insights
+GitHub: Version control and portfolio sharing
+Data Analysis: Pattern recognition, risk scoring, visualization
