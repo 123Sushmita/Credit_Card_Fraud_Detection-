@@ -78,7 +78,19 @@ Examples:
 - Device Trust Score vs Fraud  
 - Fraud by Merchant Category  
 - Heatmap: Fraud by Hour vs Merchant Category  
-- Velocity Last 24 Hours vs Fraud  
+- Velocity Last 24 Hours vs Fraud
+  
+---
+## Tableau Dashboards
+
+### 1. Fraud Overview Dashboard  
+https://public.tableau.com/authoring/creditcardFraud/Dashboard1#1
+
+### 2. Transaction Behavior Dashboard  
+https://public.tableau.com/authoring/creditcardFraud/Dashboard2#1
+
+### 3. Risk Analysis Dashboard  
+https://public.tableau.com/authoring/creditcardFraud/Dashboard3#1
 
 ---
 
