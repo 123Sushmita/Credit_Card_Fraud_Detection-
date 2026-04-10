@@ -81,16 +81,19 @@ Examples:
 - Velocity Last 24 Hours vs Fraud
   
 ---
-## Tableau Dashboards
+## 📊 Tableau Dashboards
 
-### 1. Fraud Overview Dashboard  
-https://public.tableau.com/authoring/creditcardFraud/Dashboard1#1
+🔹 **Fraud Overview Dashboard**  
+Provides a high-level summary of fraudulent transactions and key KPIs.  
+👉 [View Dashboard](https://public.tableau.com/views/creditcardFraud/Dashboard1)
 
-### 2. Transaction Behavior Dashboard  
-https://public.tableau.com/authoring/creditcardFraud/Dashboard2#1
+🔹 **Transaction Behavior Dashboard**  
+Analyzes customer transaction patterns and anomalies.  
+👉 [View Dashboard](https://public.tableau.com/views/creditcardFraud/Dashboard2)
 
-### 3. Risk Analysis Dashboard  
-https://public.tableau.com/authoring/creditcardFraud/Dashboard3#1
+🔹 **Risk Analysis Dashboard**  
+Identifies high-risk transactions using advanced analytics.  
+👉 [View Dashboard](https://public.tableau.com/views/creditcardFraud/Dashboard3)
 
 ---
 
